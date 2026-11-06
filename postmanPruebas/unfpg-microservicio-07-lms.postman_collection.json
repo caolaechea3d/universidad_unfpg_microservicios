@@ -1,0 +1,537 @@
+{
+  "info": {
+    "_postman_id": "53d86a41-1b9f-4aee-ac17-10a585e5e8bf",
+    "name": "unfpg-microservicio-07-lms",
+    "description": "Pruebas del microservicio lms (usa el puerto 9097).",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "58298019",
+    "_collection_link": "https://go.postman.co/collection/58298019-53d86a41-1b9f-4aee-ac17-10a585e5e8bf?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "cursolms",
+      "item": [
+        {
+          "name": "findAll",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:9097/unfpg/api/cursolms",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9097",
+              "path": [
+                "unfpg",
+                "api",
+                "cursolms"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "findAllCustom",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:9097/unfpg/api/cursolms/custom",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9097",
+              "path": [
+                "unfpg",
+                "api",
+                "cursolms",
+                "custom"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "findById",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:9097/unfpg/api/cursolms/1",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9097",
+              "path": [
+                "unfpg",
+                "api",
+                "cursolms",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "add",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"codpla\": 1,\r\n    \"estado\": true,\r\n    \"codsec\": 1\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:9097/unfpg/api/cursolms",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9097",
+              "path": [
+                "unfpg",
+                "api",
+                "cursolms"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "enable",
+          "request": {
+            "method": "PATCH",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:9097/unfpg/api/cursolms/11",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9097",
+              "path": [
+                "unfpg",
+                "api",
+                "cursolms",
+                "11"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "update",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"codigo\": 11,\r\n    \"codpla\": 1,\r\n    \"estado\": true,\r\n    \"codsec\": 2\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:9097/unfpg/api/cursolms/11",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9097",
+              "path": [
+                "unfpg",
+                "api",
+                "cursolms",
+                "11"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "delete",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:9097/unfpg/api/cursolms/11",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9097",
+              "path": [
+                "unfpg",
+                "api",
+                "cursolms",
+                "11"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "evaluacionlms",
+      "item": [
+        {
+          "name": "findAll",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:9097/unfpg/api/evaluacionlms",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9097",
+              "path": [
+                "unfpg",
+                "api",
+                "evaluacionlms"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "findAllCustom",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:9097/unfpg/api/evaluacionlms/custom",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9097",
+              "path": [
+                "unfpg",
+                "api",
+                "evaluacionlms",
+                "custom"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "findById",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:9097/unfpg/api/evaluacionlms/1",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9097",
+              "path": [
+                "unfpg",
+                "api",
+                "evaluacionlms",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "add",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"nombre\": \"Evaluación 11\",\r\n    \"descripcion\": \"Evaluación virtual de prueba\",\r\n    \"fechaEvaluacion\": \"2026-11-20T18:00:00\",\r\n    \"estado\": true,\r\n    \"codcurl\": 1\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:9097/unfpg/api/evaluacionlms",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9097",
+              "path": [
+                "unfpg",
+                "api",
+                "evaluacionlms"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "enable",
+          "request": {
+            "method": "PATCH",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:9097/unfpg/api/evaluacionlms/11",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9097",
+              "path": [
+                "unfpg",
+                "api",
+                "evaluacionlms",
+                "11"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "update",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"codigo\": 11,\r\n    \"nombre\": \"Evaluación 11\",\r\n    \"descripcion\": \"Evaluación virtual de prueba actualizada\",\r\n    \"fechaEvaluacion\": \"2026-11-20T18:00:00\",\r\n    \"estado\": true,\r\n    \"codcurl\": 1\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:9097/unfpg/api/evaluacionlms/11",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9097",
+              "path": [
+                "unfpg",
+                "api",
+                "evaluacionlms",
+                "11"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "delete",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:9097/unfpg/api/evaluacionlms/11",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9097",
+              "path": [
+                "unfpg",
+                "api",
+                "evaluacionlms",
+                "11"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "matriculalms",
+      "item": [
+        {
+          "name": "findAll",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:9097/unfpg/api/matriculalms",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9097",
+              "path": [
+                "unfpg",
+                "api",
+                "matriculalms"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "findAllCustom",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:9097/unfpg/api/matriculalms/custom",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9097",
+              "path": [
+                "unfpg",
+                "api",
+                "matriculalms",
+                "custom"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "findById",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:9097/unfpg/api/matriculalms/1",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9097",
+              "path": [
+                "unfpg",
+                "api",
+                "matriculalms",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "add",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"fechaMatricula\": \"2026-11-06T09:00:00\",\r\n    \"estado\": true,\r\n    \"codalu\": 1,\r\n    \"codcurl\": 2,\r\n    \"codroll\": 1\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:9097/unfpg/api/matriculalms",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9097",
+              "path": [
+                "unfpg",
+                "api",
+                "matriculalms"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "enable",
+          "request": {
+            "method": "PATCH",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:9097/unfpg/api/matriculalms/11",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9097",
+              "path": [
+                "unfpg",
+                "api",
+                "matriculalms",
+                "11"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "update",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"codigo\": 11,\r\n    \"fechaMatricula\": \"2026-11-06T09:00:00\",\r\n    \"estado\": true,\r\n    \"codalu\": 1,\r\n    \"codcurl\": 2,\r\n    \"codroll\": 2\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:9097/unfpg/api/matriculalms/11",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9097",
+              "path": [
+                "unfpg",
+                "api",
+                "matriculalms",
+                "11"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "delete",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:9097/unfpg/api/matriculalms/11",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9097",
+              "path": [
+                "unfpg",
+                "api",
+                "matriculalms",
+                "11"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}

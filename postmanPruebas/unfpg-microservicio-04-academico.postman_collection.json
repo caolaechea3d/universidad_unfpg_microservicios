@@ -1,0 +1,2089 @@
+{
+  "info": {
+    "_postman_id": "2833b8d7-3487-4ed4-b32f-97f2ce23d623",
+    "name": "unfpg-microservicio-04-academico",
+    "description": "Pruebas del microservicio academico (usa el puerto 9094).",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "58298019",
+    "_collection_link": "https://go.postman.co/collection/58298019-2833b8d7-3487-4ed4-b32f-97f2ce23d623?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "facultad",
+      "item": [
+        {
+          "name": "findAll",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:9094/unfpg/api/facultad",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9094",
+              "path": [
+                "unfpg",
+                "api",
+                "facultad"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "findAllCustom",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:9094/unfpg/api/facultad/custom",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9094",
+              "path": [
+                "unfpg",
+                "api",
+                "facultad",
+                "custom"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "findById",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:9094/unfpg/api/facultad/1",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9094",
+              "path": [
+                "unfpg",
+                "api",
+                "facultad",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "add",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"nombre\": \"Ciencias de la Salud\",\r\n    \"descripcion\": \"Facultad orientada a ciencias de la salud\",\r\n    \"estado\": true\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:9094/unfpg/api/facultad",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9094",
+              "path": [
+                "unfpg",
+                "api",
+                "facultad"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "enable",
+          "request": {
+            "method": "PATCH",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:9094/unfpg/api/facultad/4",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9094",
+              "path": [
+                "unfpg",
+                "api",
+                "facultad",
+                "4"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "update",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"codigo\": 4,\r\n    \"nombre\": \"Ciencias Médicas y de la Salud\",\r\n    \"descripcion\": \"Facultad orientada a ciencias de la salud\",\r\n    \"estado\": true\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:9094/unfpg/api/facultad/4",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9094",
+              "path": [
+                "unfpg",
+                "api",
+                "facultad",
+                "4"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "delete",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:9094/unfpg/api/facultad/4",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9094",
+              "path": [
+                "unfpg",
+                "api",
+                "facultad",
+                "4"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "programa",
+      "item": [
+        {
+          "name": "findAll",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:9094/unfpg/api/programa",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9094",
+              "path": [
+                "unfpg",
+                "api",
+                "programa"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "findAllCustom",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:9094/unfpg/api/programa/custom",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9094",
+              "path": [
+                "unfpg",
+                "api",
+                "programa",
+                "custom"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "findById",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:9094/unfpg/api/programa/1",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9094",
+              "path": [
+                "unfpg",
+                "api",
+                "programa",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "add",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"nombre\": \"Enfermería\",\r\n    \"estado\": true,\r\n    \"facultad\": {\r\n        \"codigo\": 1\r\n    }\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:9094/unfpg/api/programa",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9094",
+              "path": [
+                "unfpg",
+                "api",
+                "programa"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "enable",
+          "request": {
+            "method": "PATCH",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:9094/unfpg/api/programa/5",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9094",
+              "path": [
+                "unfpg",
+                "api",
+                "programa",
+                "5"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "update",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"codigo\": 5,\r\n    \"nombre\": \"Enfermería Técnica\",\r\n    \"estado\": true,\r\n    \"facultad\": {\r\n        \"codigo\": 1\r\n    }\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:9094/unfpg/api/programa/5",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9094",
+              "path": [
+                "unfpg",
+                "api",
+                "programa",
+                "5"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "delete",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:9094/unfpg/api/programa/5",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9094",
+              "path": [
+                "unfpg",
+                "api",
+                "programa",
+                "5"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "planestudio",
+      "item": [
+        {
+          "name": "findAll",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:9094/unfpg/api/planestudio",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9094",
+              "path": [
+                "unfpg",
+                "api",
+                "planestudio"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "findAllCustom",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:9094/unfpg/api/planestudio/custom",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9094",
+              "path": [
+                "unfpg",
+                "api",
+                "planestudio",
+                "custom"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "findById",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:9094/unfpg/api/planestudio/1",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9094",
+              "path": [
+                "unfpg",
+                "api",
+                "planestudio",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "add",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"nombre\": \"Plan 2027 - Ingeniería de Sistemas\",\r\n    \"descripcion\": \"Plan curricular desde 2027\",\r\n    \"estado\": true,\r\n    \"programa\": {\r\n        \"codigo\": 1\r\n    }\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:9094/unfpg/api/planestudio",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9094",
+              "path": [
+                "unfpg",
+                "api",
+                "planestudio"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "enable",
+          "request": {
+            "method": "PATCH",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:9094/unfpg/api/planestudio/5",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9094",
+              "path": [
+                "unfpg",
+                "api",
+                "planestudio",
+                "5"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "update",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"codigo\": 5,\r\n    \"nombre\": \"Plan 2027 - Ingeniería de Sistemas\",\r\n    \"descripcion\": \"Plan curricular actualizado desde 2027\",\r\n    \"estado\": true,\r\n    \"programa\": {\r\n        \"codigo\": 1\r\n    }\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:9094/unfpg/api/planestudio/5",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9094",
+              "path": [
+                "unfpg",
+                "api",
+                "planestudio",
+                "5"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "delete",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:9094/unfpg/api/planestudio/5",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9094",
+              "path": [
+                "unfpg",
+                "api",
+                "planestudio",
+                "5"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "curso",
+      "item": [
+        {
+          "name": "findAll",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:9094/unfpg/api/curso",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9094",
+              "path": [
+                "unfpg",
+                "api",
+                "curso"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "findAllCustom",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:9094/unfpg/api/curso/custom",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9094",
+              "path": [
+                "unfpg",
+                "api",
+                "curso",
+                "custom"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "findById",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:9094/unfpg/api/curso/1",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9094",
+              "path": [
+                "unfpg",
+                "api",
+                "curso",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "add",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"serie\": \"IS999\",\r\n    \"nombre\": \"Arquitectura de Microservicios\",\r\n    \"creditos\": 4,\r\n    \"bloque\": 4,\r\n    \"programa\": {\r\n        \"codigo\": 1\r\n    }\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:9094/unfpg/api/curso",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9094",
+              "path": [
+                "unfpg",
+                "api",
+                "curso"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "update",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"codigo\": 11,\r\n    \"serie\": \"IS999\",\r\n    \"nombre\": \"Arquitectura de Microservicios\",\r\n    \"creditos\": 3,\r\n    \"bloque\": 4,\r\n    \"programa\": {\r\n        \"codigo\": 1\r\n    }\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:9094/unfpg/api/curso/11",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9094",
+              "path": [
+                "unfpg",
+                "api",
+                "curso",
+                "11"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "periodoacademico",
+      "item": [
+        {
+          "name": "findAll",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:9094/unfpg/api/periodoacademico",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9094",
+              "path": [
+                "unfpg",
+                "api",
+                "periodoacademico"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "findAllCustom",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:9094/unfpg/api/periodoacademico/custom",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9094",
+              "path": [
+                "unfpg",
+                "api",
+                "periodoacademico",
+                "custom"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "findById",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:9094/unfpg/api/periodoacademico/1",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9094",
+              "path": [
+                "unfpg",
+                "api",
+                "periodoacademico",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "add",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"nombre\": \"2027-I\",\r\n    \"fechaInicio\": \"2027-03-15\",\r\n    \"fechaFin\": \"2027-07-17\",\r\n    \"descripcion\": \"Primer período académico 2027\",\r\n    \"estado\": true\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:9094/unfpg/api/periodoacademico",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9094",
+              "path": [
+                "unfpg",
+                "api",
+                "periodoacademico"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "enable",
+          "request": {
+            "method": "PATCH",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:9094/unfpg/api/periodoacademico/3",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9094",
+              "path": [
+                "unfpg",
+                "api",
+                "periodoacademico",
+                "3"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "update",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"codigo\": 3,\r\n    \"nombre\": \"2027-I\",\r\n    \"fechaInicio\": \"2027-03-15\",\r\n    \"fechaFin\": \"2027-07-17\",\r\n    \"descripcion\": \"Primer período académico 2027 actualizado\",\r\n    \"estado\": true\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:9094/unfpg/api/periodoacademico/3",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9094",
+              "path": [
+                "unfpg",
+                "api",
+                "periodoacademico",
+                "3"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "delete",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:9094/unfpg/api/periodoacademico/3",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9094",
+              "path": [
+                "unfpg",
+                "api",
+                "periodoacademico",
+                "3"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "aula",
+      "item": [
+        {
+          "name": "findAll",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:9094/unfpg/api/aula",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9094",
+              "path": [
+                "unfpg",
+                "api",
+                "aula"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "findAllCustom",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:9094/unfpg/api/aula/custom",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9094",
+              "path": [
+                "unfpg",
+                "api",
+                "aula",
+                "custom"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "findById",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:9094/unfpg/api/aula/1",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9094",
+              "path": [
+                "unfpg",
+                "api",
+                "aula",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "add",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"nombre\": \"A-301\",\r\n    \"capacidad\": 35,\r\n    \"codubi\": 1,\r\n    \"codtipa\": 1,\r\n    \"codesta\": 1\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:9094/unfpg/api/aula",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9094",
+              "path": [
+                "unfpg",
+                "api",
+                "aula"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "enable",
+          "request": {
+            "method": "PATCH",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:9094/unfpg/api/aula/9",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9094",
+              "path": [
+                "unfpg",
+                "api",
+                "aula",
+                "9"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "update",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"codigo\": 9,\r\n    \"nombre\": \"A-301\",\r\n    \"capacidad\": 40,\r\n    \"codubi\": 1,\r\n    \"codtipa\": 1,\r\n    \"codesta\": 1\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:9094/unfpg/api/aula/9",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9094",
+              "path": [
+                "unfpg",
+                "api",
+                "aula",
+                "9"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "delete",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:9094/unfpg/api/aula/9",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9094",
+              "path": [
+                "unfpg",
+                "api",
+                "aula",
+                "9"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "seccion",
+      "item": [
+        {
+          "name": "findAll",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:9094/unfpg/api/seccion",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9094",
+              "path": [
+                "unfpg",
+                "api",
+                "seccion"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "findAllCustom",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:9094/unfpg/api/seccion/custom",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9094",
+              "path": [
+                "unfpg",
+                "api",
+                "seccion",
+                "custom"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "findById",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:9094/unfpg/api/seccion/1",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9094",
+              "path": [
+                "unfpg",
+                "api",
+                "seccion",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "add",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"capsec\": 30,\r\n    \"curso\": {\r\n        \"codigo\": 1\r\n    },\r\n    \"periodoacademico\": {\r\n        \"codigo\": 2\r\n    },\r\n    \"coddoc\": 1\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:9094/unfpg/api/seccion",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9094",
+              "path": [
+                "unfpg",
+                "api",
+                "seccion"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "update",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"codigo\": 11,\r\n    \"capsec\": 35,\r\n    \"curso\": {\r\n        \"codigo\": 1\r\n    },\r\n    \"periodoacademico\": {\r\n        \"codigo\": 2\r\n    },\r\n    \"coddoc\": 1\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:9094/unfpg/api/seccion/11",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9094",
+              "path": [
+                "unfpg",
+                "api",
+                "seccion",
+                "11"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "horario",
+      "item": [
+        {
+          "name": "findAll",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:9094/unfpg/api/horario",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9094",
+              "path": [
+                "unfpg",
+                "api",
+                "horario"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "findAllCustom",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:9094/unfpg/api/horario/custom",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9094",
+              "path": [
+                "unfpg",
+                "api",
+                "horario",
+                "custom"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "findById",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:9094/unfpg/api/horario/1",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9094",
+              "path": [
+                "unfpg",
+                "api",
+                "horario",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "add",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"seccion\": {\r\n        \"codigo\": 1\r\n    },\r\n    \"aula\": {\r\n        \"codigo\": 1\r\n    },\r\n    \"codblo\": 7,\r\n    \"coddias\": 5\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:9094/unfpg/api/horario",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9094",
+              "path": [
+                "unfpg",
+                "api",
+                "horario"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "update",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"codigo\": 13,\r\n    \"seccion\": {\r\n        \"codigo\": 1\r\n    },\r\n    \"aula\": {\r\n        \"codigo\": 1\r\n    },\r\n    \"codblo\": 7,\r\n    \"coddias\": 6\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:9094/unfpg/api/horario/13",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9094",
+              "path": [
+                "unfpg",
+                "api",
+                "horario",
+                "13"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "matricula",
+      "item": [
+        {
+          "name": "findAll",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:9094/unfpg/api/matricula",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9094",
+              "path": [
+                "unfpg",
+                "api",
+                "matricula"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "findAllCustom",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:9094/unfpg/api/matricula/custom",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9094",
+              "path": [
+                "unfpg",
+                "api",
+                "matricula",
+                "custom"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "findById",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:9094/unfpg/api/matricula/1",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9094",
+              "path": [
+                "unfpg",
+                "api",
+                "matricula",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "add",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"observacion\": \"Matrícula regular 2026-II\",\r\n    \"estado\": true,\r\n    \"periodoacademico\": {\r\n        \"codigo\": 2\r\n    },\r\n    \"codalu\": 1,\r\n    \"codestm\": 1,\r\n    \"codtipm\": 1\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:9094/unfpg/api/matricula",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9094",
+              "path": [
+                "unfpg",
+                "api",
+                "matricula"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "enable",
+          "request": {
+            "method": "PATCH",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:9094/unfpg/api/matricula/11",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9094",
+              "path": [
+                "unfpg",
+                "api",
+                "matricula",
+                "11"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "update",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"numero\": 11,\r\n    \"observacion\": \"Matrícula regular 2026-II confirmada\",\r\n    \"estado\": true,\r\n    \"periodoacademico\": {\r\n        \"codigo\": 2\r\n    },\r\n    \"codalu\": 1,\r\n    \"codestm\": 1,\r\n    \"codtipm\": 1\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:9094/unfpg/api/matricula/11",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9094",
+              "path": [
+                "unfpg",
+                "api",
+                "matricula",
+                "11"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "delete",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:9094/unfpg/api/matricula/11",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9094",
+              "path": [
+                "unfpg",
+                "api",
+                "matricula",
+                "11"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "detallematricula",
+      "item": [
+        {
+          "name": "findAll",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:9094/unfpg/api/detallematricula",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9094",
+              "path": [
+                "unfpg",
+                "api",
+                "detallematricula"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "findAllCustom",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:9094/unfpg/api/detallematricula/custom",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9094",
+              "path": [
+                "unfpg",
+                "api",
+                "detallematricula",
+                "custom"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "findById",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:9094/unfpg/api/detallematricula/1",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9094",
+              "path": [
+                "unfpg",
+                "api",
+                "detallematricula",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "add",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"estado\": true,\r\n    \"matricula\": {\r\n        \"numero\": 1\r\n    },\r\n    \"seccion\": {\r\n        \"codigo\": 3\r\n    }\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:9094/unfpg/api/detallematricula",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9094",
+              "path": [
+                "unfpg",
+                "api",
+                "detallematricula"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "enable",
+          "request": {
+            "method": "PATCH",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:9094/unfpg/api/detallematricula/21",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9094",
+              "path": [
+                "unfpg",
+                "api",
+                "detallematricula",
+                "21"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "update",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"codigo\": 21,\r\n    \"estado\": true,\r\n    \"matricula\": {\r\n        \"numero\": 1\r\n    },\r\n    \"seccion\": {\r\n        \"codigo\": 4\r\n    }\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:9094/unfpg/api/detallematricula/21",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9094",
+              "path": [
+                "unfpg",
+                "api",
+                "detallematricula",
+                "21"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "delete",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:9094/unfpg/api/detallematricula/21",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9094",
+              "path": [
+                "unfpg",
+                "api",
+                "detallematricula",
+                "21"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "calificacion",
+      "item": [
+        {
+          "name": "findAll",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:9094/unfpg/api/calificacion",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9094",
+              "path": [
+                "unfpg",
+                "api",
+                "calificacion"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "findById",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:9094/unfpg/api/calificacion/1",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9094",
+              "path": [
+                "unfpg",
+                "api",
+                "calificacion",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "add",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"fecha\": \"2026-11-06T10:00:00\",\r\n    \"nota\": 15.5,\r\n    \"detallematricula\": {\r\n        \"codigo\": 1\r\n    },\r\n    \"seccion\": {\r\n        \"codigo\": 1\r\n    },\r\n    \"codtipc\": 1\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:9094/unfpg/api/calificacion",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9094",
+              "path": [
+                "unfpg",
+                "api",
+                "calificacion"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "update",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"codigo\": 41,\r\n    \"fecha\": \"2026-11-06T10:00:00\",\r\n    \"nota\": 17.0,\r\n    \"detallematricula\": {\r\n        \"codigo\": 1\r\n    },\r\n    \"seccion\": {\r\n        \"codigo\": 1\r\n    },\r\n    \"codtipc\": 1\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:9094/unfpg/api/calificacion/41",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9094",
+              "path": [
+                "unfpg",
+                "api",
+                "calificacion",
+                "41"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "delete",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:9094/unfpg/api/calificacion/41",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9094",
+              "path": [
+                "unfpg",
+                "api",
+                "calificacion",
+                "41"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "asistencia",
+      "item": [
+        {
+          "name": "findAll",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:9094/unfpg/api/asistencia",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9094",
+              "path": [
+                "unfpg",
+                "api",
+                "asistencia"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "findAllCustom",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:9094/unfpg/api/asistencia/custom",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9094",
+              "path": [
+                "unfpg",
+                "api",
+                "asistencia",
+                "custom"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "findById",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:9094/unfpg/api/asistencia/1",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9094",
+              "path": [
+                "unfpg",
+                "api",
+                "asistencia",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "add",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"fecha\": \"2026-11-06T08:00:00\",\r\n    \"presente\": true,\r\n    \"justificada\": false,\r\n    \"detallematricula\": {\r\n        \"codigo\": 1\r\n    },\r\n    \"seccion\": {\r\n        \"codigo\": 1\r\n    }\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:9094/unfpg/api/asistencia",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9094",
+              "path": [
+                "unfpg",
+                "api",
+                "asistencia"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "update",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"codigo\": 61,\r\n    \"fecha\": \"2026-11-06T08:00:00\",\r\n    \"presente\": false,\r\n    \"justificada\": true,\r\n    \"detallematricula\": {\r\n        \"codigo\": 1\r\n    },\r\n    \"seccion\": {\r\n        \"codigo\": 1\r\n    }\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:9094/unfpg/api/asistencia/61",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9094",
+              "path": [
+                "unfpg",
+                "api",
+                "asistencia",
+                "61"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "delete",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:9094/unfpg/api/asistencia/61",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9094",
+              "path": [
+                "unfpg",
+                "api",
+                "asistencia",
+                "61"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "traslado",
+      "item": [
+        {
+          "name": "findAll",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:9094/unfpg/api/traslado",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9094",
+              "path": [
+                "unfpg",
+                "api",
+                "traslado"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "findAllCustom",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:9094/unfpg/api/traslado/custom",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9094",
+              "path": [
+                "unfpg",
+                "api",
+                "traslado",
+                "custom"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "findById",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:9094/unfpg/api/traslado/1",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9094",
+              "path": [
+                "unfpg",
+                "api",
+                "traslado",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "add",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"programaorigen\": \"Ingeniería Informática\",\r\n    \"universidadorigen\": \"Universidad de origen C\",\r\n    \"estado\": true,\r\n    \"matricula\": {\r\n        \"numero\": 1\r\n    }\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:9094/unfpg/api/traslado",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9094",
+              "path": [
+                "unfpg",
+                "api",
+                "traslado"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "enable",
+          "request": {
+            "method": "PATCH",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:9094/unfpg/api/traslado/3",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9094",
+              "path": [
+                "unfpg",
+                "api",
+                "traslado",
+                "3"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "update",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"codigo\": 3,\r\n    \"programaorigen\": \"Ingeniería Informática\",\r\n    \"universidadorigen\": \"Universidad de origen D\",\r\n    \"estado\": true,\r\n    \"matricula\": {\r\n        \"numero\": 1\r\n    }\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:9094/unfpg/api/traslado/3",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9094",
+              "path": [
+                "unfpg",
+                "api",
+                "traslado",
+                "3"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "delete",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:9094/unfpg/api/traslado/3",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9094",
+              "path": [
+                "unfpg",
+                "api",
+                "traslado",
+                "3"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}

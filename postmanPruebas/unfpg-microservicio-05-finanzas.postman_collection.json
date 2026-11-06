@@ -1,0 +1,362 @@
+{
+  "info": {
+    "_postman_id": "2e135cea-0430-42a7-b47c-33f423518544",
+    "name": "unfpg-microservicio-05-finanzas",
+    "description": "Pruebas del microservicio finanzas (usa el puerto 9095).",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "58298019",
+    "_collection_link": "https://go.postman.co/collection/58298019-2e135cea-0430-42a7-b47c-33f423518544?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "ordenpago",
+      "item": [
+        {
+          "name": "findAll",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:9095/unfpg/api/ordenpago",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9095",
+              "path": [
+                "unfpg",
+                "api",
+                "ordenpago"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "findAllCustom",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:9095/unfpg/api/ordenpago/custom",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9095",
+              "path": [
+                "unfpg",
+                "api",
+                "ordenpago",
+                "custom"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "findById",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:9095/unfpg/api/ordenpago/1",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9095",
+              "path": [
+                "unfpg",
+                "api",
+                "ordenpago",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "add",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"fecha\": \"2026-11-06T09:00:00\",\r\n    \"monto\": 350.0,\r\n    \"estado\": true,\r\n    \"codconp\": 1,\r\n    \"nummat\": 1,\r\n    \"codmetp\": 1,\r\n    \"codestp\": 1\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:9095/unfpg/api/ordenpago",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9095",
+              "path": [
+                "unfpg",
+                "api",
+                "ordenpago"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "enable",
+          "request": {
+            "method": "PATCH",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:9095/unfpg/api/ordenpago/21",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9095",
+              "path": [
+                "unfpg",
+                "api",
+                "ordenpago",
+                "21"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "update",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"codigo\": 21,\r\n    \"fecha\": \"2026-11-06T09:00:00\",\r\n    \"monto\": 400.0,\r\n    \"estado\": true,\r\n    \"codconp\": 1,\r\n    \"nummat\": 1,\r\n    \"codmetp\": 1,\r\n    \"codestp\": 1\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:9095/unfpg/api/ordenpago/21",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9095",
+              "path": [
+                "unfpg",
+                "api",
+                "ordenpago",
+                "21"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "delete",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:9095/unfpg/api/ordenpago/21",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9095",
+              "path": [
+                "unfpg",
+                "api",
+                "ordenpago",
+                "21"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "pago",
+      "item": [
+        {
+          "name": "findAll",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:9095/unfpg/api/pago",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9095",
+              "path": [
+                "unfpg",
+                "api",
+                "pago"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "findAllCustom",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:9095/unfpg/api/pago/custom",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9095",
+              "path": [
+                "unfpg",
+                "api",
+                "pago",
+                "custom"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "findById",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:9095/unfpg/api/pago/1",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9095",
+              "path": [
+                "unfpg",
+                "api",
+                "pago",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "add",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"fecha\": \"2026-11-06T10:00:00\",\r\n    \"monto\": 350.0,\r\n    \"estado\": true,\r\n    \"codordpag\": 1\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:9095/unfpg/api/pago",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9095",
+              "path": [
+                "unfpg",
+                "api",
+                "pago"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "enable",
+          "request": {
+            "method": "PATCH",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:9095/unfpg/api/pago/21",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9095",
+              "path": [
+                "unfpg",
+                "api",
+                "pago",
+                "21"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "update",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"codigo\": 21,\r\n    \"fecha\": \"2026-11-06T10:00:00\",\r\n    \"monto\": 400.0,\r\n    \"estado\": true,\r\n    \"codordpag\": 1\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:9095/unfpg/api/pago/21",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9095",
+              "path": [
+                "unfpg",
+                "api",
+                "pago",
+                "21"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "delete",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:9095/unfpg/api/pago/21",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9095",
+              "path": [
+                "unfpg",
+                "api",
+                "pago",
+                "21"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}
